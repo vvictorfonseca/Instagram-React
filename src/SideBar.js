@@ -13,7 +13,7 @@ export default function SideBar() {
     return (
         <div class="caixa-direita">
 
-            <Side foto={infoUsuario.foto} user={infoUsuario.user} nome={infoUsuario.nome} />
+            <Usuario foto={infoUsuario.foto} user={infoUsuario.user} nome={infoUsuario.nome} />
 
             <div class="sugestões">
                 <p>Sugestões para você</p>
@@ -32,7 +32,7 @@ export default function SideBar() {
     )
 }
 
-function Side(props) {
+function Usuario(props) {
     return (
         <div class="perfil-usuário">
             <img src={props.foto} />
